@@ -6,7 +6,8 @@ import openpyxl, os
 
 # Set working directory
 cwd = os.path.join('c:', os.sep, 'Users', 'Phil', 'Documents', 'python')
-print(cwd)
+os.chdir(cwd)
+#print(cwd)
 
 # Open text files and create list object for text string lines
 col1File=open(os.path.join(cwd, 'col1.txt'))
