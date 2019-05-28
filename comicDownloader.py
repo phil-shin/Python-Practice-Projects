@@ -1,5 +1,5 @@
 #! python
-# dailyComicDownloader.py - check multiple websites daily to see if the latest
+# comicDownloader.py - check multiple websites to see if the latest
 # comic has been downloaded. If not, the latest comic will be downloaded onto
 # the desktop
 
