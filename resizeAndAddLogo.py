@@ -5,9 +5,9 @@ import os
 from PIL import Image
 
 SQUARE_FIT_SIZE = 500
-LOGO_FILENAME = 'catlogo.png'
+LOGO_FILENAME = 'quartercatlogo.png'
+logoIm = Image.open(LOGO_FILENAME)
 
-logoIm = Image.open(LOGO_FILENAME)#.convert('RGBA')
 logoWidth, logoHeight = logoIm.size
 
 os.makedirs('withLogo', exist_ok=True)
@@ -19,7 +19,7 @@ for filename in os.listdir('.'):
             or filename.lower().endswith('.bmp'))\
             or filename.lower() == LOGO_FILENAME:
         continue # skip non-image files and the logo file itself
-    im = Image.open(filename)#.convert('RGBA')
+    im = Image.open(filename)
     width, height = im.size
     # Skip small image files
     if not (width > (logoWidth*2) and height > (logoHeight*2)):
@@ -35,7 +35,7 @@ for filename in os.listdir('.'):
             height = SQUARE_FIT_SIZE
         # Resize the image.
         print('Resizing %s...' % (filename))
-    im = im.resize((width, height))
+        im = im.resize((width, height))
     # Add the logo.
     print('Adding logo to %s...' % (filename))
     im.paste(logoIm, (width - logoWidth, height - logoHeight), logoIm)
