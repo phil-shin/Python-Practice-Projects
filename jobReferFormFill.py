@@ -9,8 +9,8 @@ firstNameForm= (864, 480)
 sendButton= (1166, 702)
 
 # Set Form Info.
-formData = {'First Name': 'Tristan', 'Last Name':'Rericha', \
-            'Email':'trericha.jobs@gmail.com', 'Phone':'208-859-5347',\
+formData = {'First Name': '', 'Last Name':'', \
+            'Email':'', 'Phone':'',\
             'Country':'united state'}
 
 # Fill out form
