@@ -2,7 +2,7 @@
 # jobReferFormFill.py - Fills out job referral form at open window
 # and hits submit
 
-import pyautogui, time
+import pyautogui
 
 # Set First name form and Send button coordinates
 firstNameForm= (864, 480)
